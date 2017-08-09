@@ -2,7 +2,7 @@ var menuWidth = 450;
 
 $(document).ready(function () {  
     
-    $(".menuOpen").click(function(){
+    $(".open").click(function(){
         $(".menu").animate({ 
             right:  "+=" + menuWidth,
             }, 500 );
