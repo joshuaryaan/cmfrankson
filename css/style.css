@@ -11,29 +11,54 @@ h1 {
     letter-spacing: 0.4px;
     text-transform: uppercase;
     margin: 0;
+    text-decoration: none;
 }
 
 h2 {
     font-weight: 300;
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0.4px;
     margin: 5px 0;
 }
 
+h2 b {
+    font-weight: 400;
+}
+
 p {
     font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    line-height: 1.8;
+}
+
+p b {
+    font-weight: 300;
+}
+
+.hyperlink {
+    font-weight: 300;
     font-size: 11px;
-    letter-spacing: 0.2px;
-    margin: 0;
+    letter-spacing: 0.4px;
+    margin: 5px 0;
+    color: inherit;
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 i {
     font-weight: 200i;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+.highlight {
+    padding: 20px 40px;
+        -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .menu {
@@ -72,16 +97,31 @@ a {
     font-size: 11px;
     letter-spacing: 0.4px;
     margin: 30px 0;
+    text-decoration: none;
+}
+
+.menu li a {
+    text-decoration: none;
 }
 
 .menu li span {
-    font-size: 16px;
+    font-size: 14px;
     display: block;
     margin-bottom: 5px;
 }
 
 .menu li:first-of-type {
     margin-top: 0;
+}
+
+.menu .links {
+    margin-top: 0px;
+    padding: 0 40px;
+}
+
+.links a {
+    display: block;
+    margin: 0 0 8px 0;
 }
  
 .blackout {
@@ -102,6 +142,8 @@ header {
     width: 100%;
     top: 0;
     background-color: #eaeaea;
+    -webkit-transition: height 600ms; /* Safari */
+    transition: height 600ms;
 }
 
 .wrapper {
@@ -140,6 +182,13 @@ header .wrapper h1 {
     transition: width 600ms;
 }
 
+.text {
+    width: 740px;
+    margin: 0 80px;
+    -webkit-transition: margin 600ms; /* Safari */
+    transition: margin 600ms;
+}
+
 footer {
     position: absolute;
     min-height: 100px;
@@ -155,8 +204,17 @@ footer h1 {
 
 @media only screen and (max-width: 980px) {
     
+    header, .closeWrapper {
+        height: 80px;
+    }
+    
     .wrapper, .content {
         width: 700px;
+    }
+    
+    .text {
+        width: 700px;
+        margin: 0;
     }
     
 }

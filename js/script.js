@@ -9,7 +9,7 @@ $(document).ready(function () {
         $(".blackout").fadeIn(400);
     });
     
-    $(".close").click(function(){
+    $(".close, .blackout").click(function(){
         $(".menu").animate({ 
             right:  "-=" + menuWidth,
             }, 500 );
