@@ -25,6 +25,12 @@ h2 b {
     font-weight: 400;
 }
 
+h3 {
+    font-weight: 300;
+    font-size: 10px;
+    letter-spacing: 0.4px;
+}
+
 p {
     font-weight: 200;
     font-size: 12px;
@@ -142,6 +148,7 @@ header {
     width: 100%;
     top: 0;
     background-color: #eaeaea;
+    z-index: 2;
     -webkit-transition: height 600ms; /* Safari */
     transition: height 600ms;
 }
@@ -182,11 +189,95 @@ header .wrapper h1 {
     transition: width 600ms;
 }
 
+.grid {
+    list-style: none;
+    padding: 0;
+    overflow: auto;
+}
+
+.grid li {
+    width: 360px;
+    float: left;
+    margin-bottom: 120px;
+}
+
+.grid li:nth-of-type(even) {
+    float: right;
+}
+
+.grid li:nth-child(2) {
+    margin-top: 60px;
+}
+
+.grid .imgWrapper {
+    position: relative;
+    width: 360px;
+    min-height: 270px;
+    overflow: hidden;
+}
+
+.grid .imgWrapper img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);
+}
+
+.grid h2 {
+    margin: 8px 0 0 0;
+    display: inline-block;
+}
+
+.grid h3 {
+    margin: 6px 0 0 0;
+}
+
+.grid p {
+    margin: 4px 0 0 0;
+}
+
 .text {
     width: 740px;
-    margin: 0 80px;
+    margin: 0 80px 40px 80px;
     -webkit-transition: margin 600ms; /* Safari */
     transition: margin 600ms;
+}
+
+.gridFull {
+    width: 900px;
+}
+
+.gridFull img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gridOne {
+    width: 740px;
+    margin: 20px 80px;
+}
+
+.gridOne img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.gridTwo {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gridTwo img {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.gridTwo img:nth-of-type(even) {
+    float: right;
 }
 
 footer {
@@ -204,6 +295,10 @@ footer h1 {
 
 @media only screen and (max-width: 980px) {
     
+    .links a {
+        margin: 0 0 16px 0;
+    }
+    
     header, .closeWrapper {
         height: 80px;
     }
@@ -212,7 +307,17 @@ footer h1 {
         width: 700px;
     }
     
-    .text {
+    .grid li {
+        width: 300px;
+        margin-bottom: 80px;
+    }
+
+    .grid .imgWrapper {
+        width: 300px;
+        min-height: 210px;
+    }
+    
+    .text, .gridOne, .gridFull {
         width: 700px;
         margin: 0;
     }
@@ -221,15 +326,34 @@ footer h1 {
 
 @media only screen and (max-width: 740px) {
     
+    .highlight {
+        padding: 10px 10px;
+    }
+    
     .wrapper, .content {
         width: calc(100vw - 40px);
         -webkit-transition: none; /* Safari */
         transition: none;
     }
     
-    .text {
+    .grid li {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    .grid .imgWrapper {
+        width: 100%;
+        min-height: 480px;
+    }
+    
+    .text, .gridOne, .gridFull {
         width: 100%;
         margin: 0;
+    }
+    
+    .gridTwo img {
+        width: 100%;
+        margin-bottom: 20px;
     }
     
 }
