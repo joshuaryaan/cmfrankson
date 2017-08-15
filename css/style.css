@@ -1,6 +1,6 @@
 body, html {
     margin: 0;
-    background-color: #eaeaea;
+    background-color: white;
     color: black;
     font-family: 'Montserrat', sans-serif;
 }
@@ -152,7 +152,7 @@ header {
     height: 100px;
     width: 100%;
     top: 0;
-    background-color: #eaeaea;
+    background-color: white;
     z-index: 2;
     -webkit-transition: height 600ms; /* Safari */
     transition: height 600ms;
