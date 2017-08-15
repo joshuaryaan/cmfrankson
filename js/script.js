@@ -16,4 +16,11 @@ $(document).ready(function () {
         $(".blackout").fadeOut(400);
     });
     
+    $('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+        gutter: '.gutter-sizer',
+        horizontalOrder: true
+    });
+    
 });

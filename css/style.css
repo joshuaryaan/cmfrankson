@@ -108,6 +108,11 @@ i {
 
 .menu li a {
     text-decoration: none;
+  
+}
+
+.menu li a:hover {
+    text-decoration: underline;
 }
 
 .menu li span {
@@ -183,7 +188,7 @@ header .wrapper h1 {
 .content {
     width: 900px;
     margin: 100px auto 50px auto;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 200px);
     overflow: auto;
     -webkit-transition: width 600ms; /* Safari */
     transition: width 600ms;
@@ -193,6 +198,7 @@ header .wrapper h1 {
     list-style: none;
     padding: 0;
     overflow: auto;
+    margin: 0;
 }
 
 .grid li {
@@ -201,13 +207,7 @@ header .wrapper h1 {
     margin-bottom: 120px;
 }
 
-.grid li:nth-of-type(even) {
-    float: right;
-}
-
-.grid li:nth-child(2) {
-    margin-top: 60px;
-}
+.gutter-sizer { width: 180px; }
 
 .grid .imgWrapper {
     position: relative;
@@ -337,10 +337,16 @@ footer h1 {
         width: 700px;
     }
     
+    .content {
+        margin-top: 80px;
+    }
+    
     .grid li {
         width: 300px;
         margin-bottom: 80px;
     }
+    
+    .gutter-sizer { width: 100px; }
 
     .grid .imgWrapper {
         width: 300px;
@@ -370,14 +376,12 @@ footer h1 {
         width: 100%;
         margin-bottom: 80px;
     }
+    
+    .gutter-sizer { width: 0px; }
 
     .grid .imgWrapper {
         width: 100%;
         min-height: 480px;
-    }
-    
-    .grid li:nth-child(2) {
-        margin-top: 0px;
     }
     
     .text, .gridOne, .gridFull {
@@ -389,5 +393,14 @@ footer h1 {
         width: 100%;
         margin-bottom: 20px;
     }
+    
+}
+
+@media only screen and (max-width: 414px) {
+    
+   .grid .imgWrapper {
+        width: 100%;
+        min-height: 260px;
+    } 
     
 }
