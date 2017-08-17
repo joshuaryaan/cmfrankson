@@ -199,6 +199,7 @@ header .wrapper h1 {
     padding: 0;
     overflow: auto;
     margin: 0;
+    overflow: show;
 }
 
 .grid li {
@@ -207,7 +208,7 @@ header .wrapper h1 {
     margin-bottom: 120px;
 }
 
-.gutter-sizer { width: 180px; }
+.gutter-sizer { width: 178px; }
 
 .grid .imgWrapper {
     position: relative;
@@ -275,6 +276,14 @@ header .wrapper h1 {
     margin: 0 80px 40px 80px;
     -webkit-transition: margin 600ms; /* Safari */
     transition: margin 600ms;
+}
+
+img:hover {
+    cursor: zoom-in;
+}
+
+.grid img:hover {
+    cursor: inherit;
 }
 
 .gridFull {

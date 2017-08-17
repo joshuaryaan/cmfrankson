@@ -22,5 +22,5 @@ $(document).ready(function () {
         gutter: '.gutter-sizer',
         horizontalOrder: true
     });
-    
+
 });
