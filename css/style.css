@@ -164,8 +164,6 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transition: width 600ms; /* Safari */
-    transition: width 600ms;
 }
 
 header .wrapper h1 {
@@ -190,8 +188,6 @@ header .wrapper h1 {
     margin: 100px auto 50px auto;
     min-height: calc(100vh - 200px);
     overflow: auto;
-    -webkit-transition: width 600ms; /* Safari */
-    transition: width 600ms;
 }
 
 .grid {
@@ -208,7 +204,9 @@ header .wrapper h1 {
     margin-bottom: 120px;
 }
 
-.gutter-sizer { width: 178px; }
+.gutter-sizer { width: 180px; }
+
+.grid-item { width: 360px; }
 
 .grid .imgWrapper {
     position: relative;
@@ -274,8 +272,6 @@ header .wrapper h1 {
 .text {
     width: 740px;
     margin: 0 80px 40px 80px;
-    -webkit-transition: margin 600ms; /* Safari */
-    transition: margin 600ms;
 }
 
 img:hover {
@@ -357,6 +353,8 @@ footer h1 {
     
     .gutter-sizer { width: 100px; }
 
+    .grid-item { width: 300px; }
+    
     .grid .imgWrapper {
         width: 300px;
         min-height: 210px;
@@ -377,8 +375,6 @@ footer h1 {
     
     .wrapper, .content {
         width: calc(100vw - 40px);
-        -webkit-transition: none; /* Safari */
-        transition: none;
     }
     
     .grid li {
@@ -388,6 +384,8 @@ footer h1 {
     
     .gutter-sizer { width: 0px; }
 
+    .grid-item { width: 100%; }
+    
     .grid .imgWrapper {
         width: 100%;
         min-height: 480px;

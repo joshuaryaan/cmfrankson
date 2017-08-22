@@ -18,7 +18,8 @@ $(document).ready(function () {
     
     $('.grid').masonry({
       // options
-      itemSelector: '.grid-item',
+        itemSelector: '.grid-item',
+        columnWidth: '.grid-item',
         gutter: '.gutter-sizer',
         horizontalOrder: true
     });
